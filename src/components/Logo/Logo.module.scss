@@ -1,0 +1,35 @@
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 176px;
+    height: 32px;
+}
+
+.text {
+    display: flex;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+@media screen and (max-width: 468px) {
+    .logo {
+        width: 154px;
+        height: 28px;
+    }
+
+    .img {
+        width: 42px;
+        height: 28px;
+    }
+
+    .joy {
+        width: 40px;
+        height: 22px;
+    }
+
+    .bank {
+        width: 57px;
+        height: 18px;
+    }
+}

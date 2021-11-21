@@ -1,0 +1,350 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container {
+    max-width: 1216px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.img {
+    transform: skewY(9deg);
+    object-fit: cover;
+    display: block;
+    margin: 28px auto 0;
+    display: none;
+}
+
+.mainImage {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+    top: 0;
+    left: 500px;
+    z-index: 2;
+    background-image: url('./images/parent.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_type_parenten {
+        background-image: url('./images/parent_en.png');
+    }
+
+    &_type_kidru {
+        background-image: url('./images/kid.png');
+    }
+
+    &_type_kiden {
+        background-image: url('./images/kid_en.png');
+    }
+}
+
+.imageContainer {
+    display: none;
+}
+
+.line {
+    position: absolute;
+    bottom: 190px;
+    left: 170px;
+}
+
+.ellipse {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+}
+
+.leftEllipse {
+    bottom: 0;
+    left: -100px;
+    color: $primary-600;
+
+    &_type_kid {
+        color: $secondary-600;
+    }
+}
+
+.rightEllipse {
+    bottom: -122px;
+    left: 295px;
+    color: $secondary-600;
+
+    &_type_kid {
+        color: $primary-600;
+    }
+}
+
+.rightBgContainer {
+    position: absolute;
+    top: -1000px;
+    right: 0;
+    width: 32%;
+    background-color: $primary-600;
+    transform-origin: left bottom;
+    transform: skewY(16deg);
+    bottom: 80px;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('./images/texture.png');
+        background-size: cover;
+        opacity: 0.2;
+    }
+
+    &_type_kid {
+        background-color: $secondary-600;
+    }
+}
+
+.badges {
+    margin-top: 48px;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 24px;
+    margin-top: 130px;
+    z-index: 3;
+    position: relative;
+}
+
+.cloud {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 850px;
+    transform: translate3d(0, 30px, 0);
+    animation: spin 4s infinite ease;
+}
+
+@keyframes spin {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(0,30px);
+    }
+}
+
+.suggestion {
+    display: none !important;
+}
+
+@media screen and (max-width: 1600px) {
+    .rightBgContainer {
+        width: 29%;
+    }
+}
+
+@media screen and (max-width: 1439px) {
+    .wrapper {
+        padding-left: 40px;
+        box-sizing: border-box;
+    }
+
+    .rightBgContainer {
+        width: 26%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .cloud {
+        left: 0;
+    }
+
+    .mainImage {
+        left: 400px;
+        bottom: 0;
+    }
+
+    .cloud {
+        top: 0;
+        right: 40px;
+        left: unset;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .wrapper {
+        padding: 0;
+    }
+
+    .line {
+        transform: rotate(-90deg);
+        left: 16px;
+        bottom: 0;
+        display: none;
+    }
+
+    .container {
+        padding-bottom: 0;
+        padding-top: 8px;
+    }
+
+    .title {
+        margin-left: 40px;
+    }
+
+    .badges {
+        margin-left: 40px;
+    }
+    
+    .bg {
+        display: none;
+    }
+
+    .img {
+        display: block;
+        max-width: 70%;
+        max-height: 500px;
+    }
+
+    .mainImage {
+        min-height: 600px;
+        transform-origin: top right;
+        transform: skewY(-9deg);
+        background-color: $primary-600;
+        z-index: 2;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        margin-top: 26px;
+        background-image: unset;
+
+        &_type_kidru {
+            background-color: $secondary-600;
+        }
+
+        &_type_kiden {
+            background-color: $secondary-600;
+        }
+
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            background-image: url('./images/texture.png');
+            background-size: cover;
+            opacity: 0.2;
+        }
+    }
+
+    .smallImage {
+        transform: skewY(9deg);
+    }
+
+    .ellipse {
+        display: none;
+    }
+
+    .rightBgContainer {
+        display: none;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        max-width: 328px;
+        margin: 0 auto;
+        background-image: url('./images/line-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-bottom: 80px;
+
+        &_type_kid {
+            background-image: url('./images/libe-mobile-kid.svg');
+        }
+    }
+
+    .cloud {
+        top: 280px;
+    }
+
+    .suggestion {
+        display: flex !important;
+        transform-origin: top right;
+        transform: skewY(-5deg);
+
+        &Container {
+            margin-bottom: -85px;
+            min-height: 230px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform-origin: top right;
+            transform: skewY(5deg);
+            background-color: $primary-600;
+            z-index: 2;
+            position: relative;
+
+            &_type_kid {
+                background-color: $secondary-600;
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                content: "";
+                background-image: url('./images/texture.png');
+                background-size: cover;
+                opacity: 0.2;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .img {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .img {
+        max-width: 345px;
+        max-height: 328px;
+    }
+
+    .list {
+        margin-top:-40px;
+    }
+
+    .cloud {
+        display: none
+    }
+
+    .title {
+        margin-left: 16px;
+    }
+
+    .badges {
+        margin-left: 16px;
+    }
+
+    .mainImage {
+        min-height: 440px;
+    }
+}

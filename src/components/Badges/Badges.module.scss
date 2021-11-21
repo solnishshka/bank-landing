@@ -1,0 +1,21 @@
+.wrapper {
+    display: flex;
+    column-gap: 18px;
+    row-gap: 21px;
+    z-index: 20;
+    position: relative;
+
+    &_type_column {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .wrapper {
+        column-gap: 16px;
+
+        &_type_column {
+            flex-direction: row;
+        }
+    }
+}

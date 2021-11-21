@@ -1,0 +1,23 @@
+.button {
+    border: none;
+    background-color: $transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.link {
+    max-height: 46px;
+}
+
+@media screen and (max-width: 468px) {
+    .link {
+        max-height: 40px;
+    }
+
+    .badge {
+        width: 134px;
+        height: 38px;
+    }
+}
