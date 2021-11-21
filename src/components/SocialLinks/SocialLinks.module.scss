@@ -1,16 +1,14 @@
 .socialLinks {
     z-index: 10;
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
 }
 
 .button {
     background-color: transparent;
     border: none;
     padding: 0;
-    margin-right: 16px;
-
-    &:last-of-type {
-        margin-right: 0;
-    }
 }
 
 .icon {
@@ -48,9 +46,10 @@
 }
 
 @media screen and (max-width: 999px) {
-    .button {
-        margin-right: 12px;
+    .socialLinks {
+        column-gap: 12px;
     }
+    
     .button_type_header > .icon {
         &_type {
             &_tg {

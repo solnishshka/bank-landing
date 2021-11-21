@@ -9,57 +9,57 @@ export const translations = {
       cards: [
         {
           id: 1,
-          title: "Earn",
-          text: "Get automatic rewards from your parents for school performance. Learn better - earn more.",
+          title: "Lorem ipsum",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet libero eget elit egestas gravida.",
         },
         {
           id: 2,
-          title: "Learn",
-          text: "Study financial and investment products in special courses, improve your financial literacy!",
+          title: "Lorem ipsum",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet libero eget elit egestas gravida.",
         },
         {
           id: 3,
-          title: "Play on",
-          text: "We’ve prepared unique financial competitions, amusing tests, and quizzes for all users.",
+          title: "Lorem ipsum",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet libero eget elit egestas gravida.",
         },
       ],
       suggestionText: {
-        start: "Share the link with your parents and get a",
-        span: "$10 welcome bonus",
-        end: "!",
+        start: "Lorem ipsum dolor sit amet, consectetur",
+        span: "adipiscing",
+        end: "elit.",
       },
     },
     parent: {
       cards: [
         {
           id: 1,
-          title: "Financial literacy",
-          text: "Using quizzes and financial literacy courses, we teach children to manage funds and set long-term goals.",
+          title: "Lorem ipsum",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet libero eget elit egestas gravida.",
         },
         {
           id: 2,
-          title: "Control",
-          text: "Set daily/montly purchase limits for account. Restrict AppStore/PlayMarket/Steam transactions.",
+          title: "Lorem ipsum",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet libero eget elit egestas gravida.",
         },
         {
           id: 3,
-          title: "Rewards & Fines",
-          text: "Come up with bonuses/fines for good and bad grades. Auto calculations due to integration with online gradebooks.",
+          title: "Lorem ipsum",
+          text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer imperdiet libero eget elit egestas gravida.",
         },
       ],
       suggestionText: {
-        start: "Fill our survey about your dream bank and",
-        span: "3-month “Premium”",
-        end: "!",
+        start: "Lorem ipsum dolor sit amet, consectetur",
+        span: "adipiscing ",
+        end: "elit.",
       },
     },
     suggestionButtonText: "Get",
     mainTitle: {
-      main: "Smart & Secure bank card in your phone for",
-      kids: "kids",
-      parents: "parents",
+      main: "Integer imperdiet libero eget elit egestas",
+      kids: "this",
+      parents: "other",
     },
-    accounts: ["LLC AI-Fintech", "PSRN 1217700448855", "TIN 9725060564"],
+    accounts: ["Lorem ipsum", "Lorem ipsum dolor", "Lorem ipsum"],
     contacts: {
       title: "Contacts",
       items: [
@@ -67,24 +67,24 @@ export const translations = {
           icon: (className?: string): ReactElement => (
             <EmailIcon className={className} />
           ),
-          text: "Info@joybank.ru",
+          text: "test@test.test",
         },
         {
           icon: (className?: string): ReactElement => (
             <PhoneIcon className={className} />
           ),
-          text: "+7(499)653-54-20",
+          text: "+0(000)000-00-00",
         },
         {
           icon: (className?: string): ReactElement => (
             <LocationIcon className={className} />
           ),
-          text: "115419, Moscow, Orbzhonikidze 11-1A Russian Federation",
+          text: "000000, Moscow, Test Street",
         },
       ],
     },
     appsTitle: "Download app",
-    copyright: "© 2021 JoyBank. All rights reserved.",
+    copyright: "© 2021 created by Solnishshka",
     privacyPolicyLinkText: "Privacy policy",
     translateButtonText: "RU",
   },
@@ -93,77 +93,84 @@ export const translations = {
       cards: [
         {
           id: 1,
-          title: "Зарабатывай",
-          text: "Получай автоматические вознаграждения от родителей за хорошие оценки в школе.",
+          title: "Важно",
+          text: "Не следует, однако, забывать, что перспективное планирование позволяет",
         },
         {
           id: 2,
-          title: "Учись",
-          text: "Изучай финансовые и инвестиционные продукты на специальных курсах, повышай уровень знаний!",
+          title: "Интересно",
+          text: "Не следует, однако, забывать, что перспективное планирование позволяет",
         },
         {
           id: 3,
-          title: "Играй",
-          text: "Мы подготовили интересные тесты и смешные квизы за прохождение которых можно получить бонусы.",
+          title: "Полезно",
+          text: "Не следует, однако, забывать, что перспективное планирование позволяет",
         },
       ],
       suggestionText: {
-        start: "Отправь ссылку на приложение родителям и получи",
-        span: "200 рублей",
-        end: " на баланс в подарок!",
+        start:
+          "Не следует, однако, забывать, что перспективное планирование позволяет",
+        span: "выполнить",
+        end: "важные задания.",
       },
     },
     parent: {
       cards: [
         {
           id: 1,
-          title: "Обучение",
-          text: "Научите ребенка ценности денег, финансовой грамотности и подготовьте к будущему в мире финансов.",
+          title: "Важно",
+          text: "Не следует, однако, забывать, что перспективное планирование позволяет",
         },
         {
           id: 2,
-          title: "Контроль",
-          text: "Установите лимит трат на день/месяц, ограничение в AppStore и PlayMarket, а также на  снятие наличных.",
+          title: "Интересно",
+          text: "Не следует, однако, забывать, что перспективное планирование позволяет",
         },
         {
           id: 3,
-          title: "Награды",
-          text: "Настройте автоматические бонусы за оценки в школе (интеграция с электронным дневником).",
+          title: "Полезно",
+          text: "Не следует, однако, забывать, что перспективное планирование позволяет",
         },
       ],
       suggestionText: {
         start:
-          "Расскажите нам о вашем семейном банке мечты и получите 3 месяца",
-        span: "бесплатного ",
-        end: "обслуживания!",
+          "Не следует, однако, забывать, что перспективное планирование позволяет",
+        span: "выполнить",
+        end: "важные задания.",
       },
     },
     suggestionButtonText: "Давайте",
     mainTitle: {
-      main: "Безопасная банковская карта для",
-      kids: "детей",
-      parents: "родителей",
+      main: "Не следует, однако, забывать",
+      kids: "важно",
+      parents: "полезно",
     },
-    accounts: ["ООО ”АИ-ФИНТЕХ”", "ОГРН 1217700448855", "ИНН 9725060564"],
+    accounts: ["ООО ”Тест”", "ОГРН 0000000000000", "ИНН 0000000000"],
     contacts: {
       title: "Контакты",
       items: [
         {
-          icon: (className?: string) => <EmailIcon className={className} />,
-          text: "Info@joybank.ru",
+          icon: (className?: string): ReactElement => (
+            <EmailIcon className={className} />
+          ),
+          text: "test@test.test",
         },
         {
-          icon: (className?: string) => <PhoneIcon className={className} />,
-          text: "+7(499)653-54-20",
+          icon: (className?: string): ReactElement => (
+            <PhoneIcon className={className} />
+          ),
+          text: "+0(000)000-00-00",
         },
         {
-          icon: (className?: string) => <LocationIcon className={className} />,
-          text: "115419, г. Москва,ул. Орджиникидзе 11с1а",
+          icon: (className?: string): ReactElement => (
+            <LocationIcon className={className} />
+          ),
+          text: "000000, Москва, Тестовая улица",
         },
       ],
     },
     appsTitle: "Установите приложение",
-    copyright: "© 2021 JoyBank. Все права защищены.",
+    copyright: "© 2021 created by Solnishshka",
     privacyPolicyLinkText: "Правила обработки персональных данных",
     translateButtonText: "EN",
   },

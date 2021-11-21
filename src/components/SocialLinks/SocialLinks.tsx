@@ -10,7 +10,7 @@ import styles from "./SocialLinks.module.scss";
 import { SocialLinksProp } from "./types";
 import { email, facebookUrl, telegramUrl, twitterUrl } from "./consts";
 
-const SocialLinks: FC<SocialLinksProp> = ({ type = "header" }) => {
+const SocialLinks: FC<SocialLinksProp> = ({ type = "header", children }) => {
   return (
     <div className={styles.socialLinks}>
       <a
@@ -45,6 +45,7 @@ const SocialLinks: FC<SocialLinksProp> = ({ type = "header" }) => {
       >
         <Email className={cns(styles.icon, styles.icon_type_email)} />
       </a>
+      {type === "header" && children}
     </div>
   );
 };

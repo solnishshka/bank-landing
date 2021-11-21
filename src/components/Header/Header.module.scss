@@ -14,12 +14,10 @@
 
 .langButton {
     z-index: 100;
-    position: absolute;
-    top: 40px;
-    right: 40px;
     border: none;
     background-color: transparent;
     text-decoration: underline;
+    color: #FFFFFF;
 
     &:hover {
         opacity: 0.7;
@@ -47,6 +45,10 @@
 
     .suggestion {
         display: none;
+    }
+
+    .langButton {
+        color: #000000;
     }
 }
 

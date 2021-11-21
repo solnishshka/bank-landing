@@ -6,17 +6,25 @@ import {
   TranslationContext,
 } from "../../contexts/translationContext";
 import { LangType } from "../../types";
+import { setStorageLang } from "../../utils/set-lang";
 import Routes from "../Routes";
-import { englishVersionUrl } from "./consts";
+import { defaultLang } from "./consts";
 
 const App: FC = () => {
   const [lang, setLang] = useState<LangType>("ru");
+  const storageLang = localStorage.getItem("lang");
 
   useEffect(() => {
-    const currentUrl = window.location.origin;
+    if (!storageLang) {
+      setStorageLang(defaultLang);
+    }
 
-    setLang(currentUrl.includes(englishVersionUrl) ? "en" : "ru");
+    setLang(storageLang as LangType);
   }, []);
+
+  useEffect(() => {
+    setStorageLang(lang);
+  }, [lang]);
 
   const context: Translation = {
     changeLang: (lang: LangType) => setLang(lang),

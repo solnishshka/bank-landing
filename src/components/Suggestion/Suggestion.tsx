@@ -34,7 +34,7 @@ const Suggestion: FC<SuggestionProps> = ({
         <span className={cns(styles.span, styles[`span_type_${type}`])}>
           {translation[type as PageType].suggestionText.span}
         </span>
-        {translation[type as PageType].suggestionText.end}
+        &nbsp;{translation[type as PageType].suggestionText.end}
       </p>
       <a
         className={cns(styles.button, styles[`button_type_${type}`])}

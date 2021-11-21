@@ -1,1 +1,3 @@
-export const englishVersionUrl = "joybank.online";
+import { LangType } from "../../types";
+
+export const defaultLang: LangType = "ru";
